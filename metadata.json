@@ -1,0 +1,5 @@
+{
+  "name": "PetCare Dashboard",
+  "description": "An interactive and beautiful dashboard for pet owners to manage their pet's health, appointments, and medications, ensuring they receive the best care.",
+  "requestFramePermissions": []
+}

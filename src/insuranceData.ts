@@ -1,0 +1,68 @@
+import type { InsurancePlan } from './types';
+import { Species } from './types';
+
+export const insurancePlans: InsurancePlan[] = [
+    {
+        companyName: 'Agria Djurförsäkring',
+        planName: 'Agria Hundras',
+        applicableSpecies: [Species.Dog],
+        basePremium: { dog: 250, cat: 0 },
+        vetCareCoverage: 60000,
+        deductible: '1500 kr + 25%',
+        keyFeatures: ['Free vet consultations online', 'Covers hidden defects', 'Rehabilitation included'],
+    },
+    {
+        companyName: 'Agria Djurförsäkring',
+        planName: 'Agria Katt',
+        applicableSpecies: [Species.Cat],
+        basePremium: { dog: 0, cat: 180 },
+        vetCareCoverage: 60000,
+        deductible: '1800 kr + 25%',
+        keyFeatures: ['Free vet consultations online', 'Covers dental issues (TR/FORL)', 'No breed restrictions'],
+    },
+    {
+        companyName: 'Folksam',
+        planName: 'Stor Hundförsäkring',
+        applicableSpecies: [Species.Dog],
+        basePremium: { dog: 310, cat: 0 },
+        vetCareCoverage: 90000,
+        deductible: '2000 kr + 20%',
+        keyFeatures: ['High coverage amount', 'Includes medicine and special food', 'Life insurance can be added'],
+    },
+    {
+        companyName: 'Folksam',
+        planName: 'Stor Kattförsäkring',
+        applicableSpecies: [Species.Cat],
+        basePremium: { dog: 0, cat: 220 },
+        vetCareCoverage: 90000,
+        deductible: '2200 kr + 20%',
+        keyFeatures: ['High coverage amount', 'Vet care abroad included', 'No deductible period limit'],
+    },
+    {
+        companyName: 'Sveland Djurförsäkringar',
+        planName: 'Favorit Hund',
+        applicableSpecies: [Species.Dog],
+        basePremium: { dog: 280, cat: 0 },
+        vetCareCoverage: 70000,
+        deductible: 'Flexible: 1800-3000 kr',
+        keyFeatures: ['Direct claim settlement', 'Discount for multiple pets', 'Includes prescribed diet food'],
+    },
+    {
+        companyName: 'Sveland Djurförsäkringar',
+        planName: 'Favorit Katt',
+        applicableSpecies: [Species.Cat],
+        basePremium: { dog: 0, cat: 195 },
+        vetCareCoverage: 70000,
+        deductible: 'Flexible: 1800-3000 kr',
+        keyFeatures: ['Direct claim settlement', 'Covers behavioral problems', 'Includes travel protection'],
+    },
+    {
+        companyName: 'IF Skadeförsäkring',
+        planName: 'Stor Djurförsäkring',
+        applicableSpecies: [Species.Dog, Species.Cat],
+        basePremium: { dog: 350, cat: 240 },
+        vetCareCoverage: 120000,
+        deductible: '2500 kr + 15%',
+        keyFeatures: ['Highest coverage amount', 'No decrease in coverage with age', 'Includes advanced imaging (MRI/CT)'],
+    },
+];
